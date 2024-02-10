@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+
 import { ChakraProvider, Box, FormControl, FormLabel, Input, Textarea, Button, Heading, Tag, TagLabel, TagCloseButton } from '@chakra-ui/react';
 
 
 export default function AddNote() {
+ 
+
   return (
     <ChakraProvider>
     <Box p={8} maxWidth="500px" borderWidth={1} borderRadius={8} boxShadow="lg" margin="auto" mt={20}>

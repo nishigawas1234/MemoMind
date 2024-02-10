@@ -24,7 +24,7 @@ function NoteModal({ isOpen, onClose, onSave, title, detail, tags }) {
                     <FormControl>
                         <Input placeholder="Note Title" mb={4} defaultValue={title} />
                         <Input placeholder="Note Detail" mb={4} defaultValue={detail} />
-                        <Input placeholder="Tags" defaultValue={tags.join(', ')} />
+                        <Input placeholder="Tags" defaultValue={tags?.join(', ')} />
                     </FormControl>
                 </ModalBody>
                 <ModalFooter>
