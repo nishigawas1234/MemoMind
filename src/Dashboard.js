@@ -173,20 +173,22 @@ useEffect(()=>{
         <ChakraProvider resetCSS >
             <Flex direction="column" alignItems="flex-end" bg="gray.100" minH="100vh">
                 <Box p={4} bg="purple.600" color="white" w="100%" mb={4}>
+                {getUser &&
                     <Flex justify="end" alignItems="center">
                         <Box textAlign="right" mr={4}>
                             <Heading size="md" fontWeight="semibold">{getUser ? getUser.name : "--"}</Heading>
                             <Button colorScheme="white" onClick={handleLogout} size="sm">Logout</Button>
                         </Box>
-                        {getUser.name &&   <Avatar
+                        <Avatar
                             bg="#010002"
                             name={getUser.name}
                             color="contrast.200"
                         >
                             <AvatarBadge boxSize={4} bg="green.500" />
-                        </Avatar>}
+                        </Avatar>
                       
                     </Flex>
+}
                 </Box>
                 <Flex mt={4} w="98%" m={4}>
                     {/* Left side: List of all notes */}
