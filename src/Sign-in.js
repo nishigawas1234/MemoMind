@@ -93,7 +93,7 @@ const signUp = (values) => {
                 </Button>
                 <Box mt={2} textAlign="center">
                   <Link href="/" color="purple.500">
-                    Already a member? Login in
+                    Already a member? Login
                   </Link>
                 </Box>
               </Form>
